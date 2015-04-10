@@ -1,9 +1,7 @@
-/**
- *
- */
 package com.alsodeep;
 
 /**
+ * Two dimensional array iterator.
  * @author Sergey Lysenko
  * April 9, 2015
  */
