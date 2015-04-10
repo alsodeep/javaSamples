@@ -9,11 +9,19 @@ package com.alsodeep;
  */
 public class ArrIterator {
 
+    /** Array for iteration */
     int[][] arr;
+    /** first dimension of the array */
     int y = 0;
+    /** curent x dimension position */
     int xstate = 0;
+    /** curent y dimension position */
     int ystate = 0;
 
+    /**
+     * Init Array iterator
+     * @param arr Array to iterate
+     */
     public ArrIterator(int[][] arr) {
         this.arr = arr;
         if (this.arr != null) {
@@ -21,6 +29,10 @@ public class ArrIterator {
         }
     }
 
+    /**
+     * Check if array has next elenent
+     * @return true if array has next element, flase if hasn't
+     */
     public boolean hasNext() {
         if (y == 0) {
             return false;
@@ -36,6 +48,10 @@ public class ArrIterator {
         return false;
     }
 
+    /**
+     * Return next element from array
+     * @return next element of array
+     */
     public int next() {
         if (hasNext()) {
             if (arr[ystate] != null && arr[ystate].length > xstate) {
